@@ -1,11 +1,14 @@
 .container{
     display:grid;
     grid: 300px repeat(15, auto) / 5% 90% 5%;
+    background-color: #e1e0df;
+    
 }
 
 body{
     margin:0;
     font-family: "Bebas Neue", serif;
+    color:#131B28;
 }
 
 figure{
@@ -53,7 +56,7 @@ nav a{
 
 nav a:focus, nav a:hover{
     color: black;
-    background: white;
+    background: #e1e0df;
     opacity: 0.8;
 }
 
@@ -62,7 +65,7 @@ nav a:active{
     margin-left: 1%;
     padding: 1%;
     color: black;
-    background: white;
+    background: #e1e0df;
 }
 
 p{
@@ -72,7 +75,9 @@ p{
 }
 
 .content_background{ 
-    background-color: lightcoral;
+    background-color: white;
+    grid-area: 2 / 2 / 14 / 3 ;
+    margin:-3%;
 }
 
 .titulo_parte1{ grid-area: 2 / 2 / 2 / 3 ;}
@@ -127,11 +132,13 @@ footer{
     color: white;
     grid-area: 14/ 1 / 14 / 4;
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 @media (min-width: 576px) {
-    .container{grid: 300px repeat(15, auto)/ 5% 90% 5%;}
+    .container{grid: 500px repeat(15, auto)/ 5% 90% 5%;}
     h1{
         font-size: 325%;
     }
@@ -139,7 +146,7 @@ footer{
 }
 
 @media (min-width: 992px) {
-    .container{grid: 650px repeat(13, auto)/ 20% 29% 2% 29% 20%;}
+    .container{grid: 650px repeat(13, auto)/ 23% 26% 2% 26% 23%;}
     h1{
         font-size: 450%;
     }
@@ -152,6 +159,8 @@ footer{
         margin-left: 0.5%;
         padding: 1%;
     }
+
+    .content_background{ grid-area: 2 / 2 / 12 / 5 ;}
     
     header{grid-area: 1 / 1 / 1/ 6 ;}
 
