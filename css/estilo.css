@@ -28,14 +28,12 @@ nav a{
     margin-right: 3%;
     padding: 2%;
     color:white;
-    background: none;
 }
 
 nav a:focus, nav a:hover{
-    margin-right: 3%;
-    padding: 2%;
     color: black;
     background: white;
+    opacity: 0.8;
 }
 
 nav a:active{
@@ -49,6 +47,7 @@ nav a:active{
 p{
     text-justify: inter-word;
     text-align: justify;
+    opacity: 0.8;
 }
 
 
@@ -110,4 +109,38 @@ footer{
     grid-area: 8/ 1 / 8 / 4;
     display:flex;
     justify-content: space-around;
+}
+
+@media (min-width: 576px) {
+    .container{grid: 500px repeat(5, auto) / 5% 90% 5%;}
+    .carrousel div{width: 45%;}
+}
+
+@media (min-width: 992px) {
+    .container{grid: 650px repeat(5, auto) / 15% 34% 2% 34% 15%;}
+    .carrousel{grid-area: 5 / 1 / 5/ 6 ;}
+    .carrousel div{width: 30%;}
+
+    footer{grid-area: 8/ 1 / 8 / 6;}
+
+    header{grid-area: 1 / 1 / 1/ 6 ;}
+
+    .primer_parrafo{grid-area: 2 / 2 / 2 / 3 ;}
+
+    .segundo_parrafo{grid-area: 2 / 4 / 2 / 5 ;}
+
+    .instrumentos{grid-area: 4 / 2 / 4 / 5 ;}
+
+
+    nav a{
+            margin-right: 3%;
+            padding: 1.5%;
+    }
+
+    nav a:active{
+        margin-right: 3.5%;
+        margin-left: 0.5%;
+        padding: 1%;
+    }
+
 }
