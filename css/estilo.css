@@ -2,7 +2,7 @@
     display:grid;
     grid: 300px repeat(5, auto) / 5% 90% 5%;
 }
-
+body{margin:0;}
 header{
     background-image: url("../imagenes/voltereta.jpg");
     background-size: cover;  
@@ -130,7 +130,6 @@ footer{
     .segundo_parrafo{grid-area: 2 / 4 / 2 / 5 ;}
 
     .instrumentos{grid-area: 4 / 2 / 4 / 5 ;}
-
 
     nav a{
             margin-right: 3%;
