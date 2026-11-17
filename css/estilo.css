@@ -78,6 +78,12 @@ p{
     width: 90%;
 }
 
+.carrousel h2{
+    color:white;
+    text-align: left;
+    width: 90%;
+}
+
 div img, img{
     aspect-ratio: 16 / 9;
     max-width: 100%;
