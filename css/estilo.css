@@ -1,10 +1,24 @@
 .container{
     display:grid;
-    grid: 300px repeat(5, auto) / 5% 90% 5%;
+    grid: 300px repeat(15, auto) / 5% 90% 5%;
 }
-body{margin:0;}
+
+body{
+    margin:0;
+    font-family: "Bebas Neue", serif;
+}
+
+figure{
+    margin: 0;
+    width:100%
+}
+
+figure audio{
+    width:100%;    
+}
+
 header{
-    background-image: url("../imagenes/voltereta.jpg");
+    background-image: url("../imagenes/portada.jpg");
     background-size: cover;  
     background-repeat: no-repeat;
     grid-area: 1 / 1 / 1/ 4 ;
@@ -22,6 +36,13 @@ header nav{
 header h1{
     color: white;
     margin-left: 3%;
+}
+
+iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
 }
 
 nav a{
@@ -50,39 +71,39 @@ p{
     opacity: 0.8;
 }
 
-
-.primer_parrafo{
-    grid-area: 2 / 2 / 2 / 3 ;
+.content_background{ 
+    background-color: lightcoral;
 }
 
-.segundo_parrafo{
-    grid-area: 3 / 2 / 3 / 3 ;
-}
+.titulo_parte1{ grid-area: 2 / 2 / 2 / 3 ;}
+.primer_parrafo{  grid-area: 3 / 2 / 3 / 3 ;}
+.segundo_parrafo{ grid-area: 4 / 2 / 4 / 3 ;}
 
-.instrumentos{
-    grid-area: 4 / 2 / 4 / 3 ;
-}
+.titulo_parte2{grid-area: 5 / 2 / 5 / 3 ;}
+.instrumentos{grid-area: 6 / 2 / 6 / 3 ;}
+
+.titulo_parte3{grid-area: 7 / 2 / 7 / 3 ;}
+.video_roda{grid-area: 8 / 2 / 8 / 3 ;}
+.roda{grid-area: 9 / 2 / 9 / 3 ;}
+
 
 .carrousel{
     background-color: black;
-    grid-area: 5 / 1 / 5/ 4 ;
+    grid-area: 10 / 1 / 10/ 4 ;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .carrousel div{
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     width: 90%;
 }
-
 .carrousel h2{
     color:white;
     text-align: left;
     width: 90%;
 }
-
 div img, img{
     aspect-ratio: 16 / 9;
     max-width: 100%;
@@ -92,12 +113,10 @@ div img, img{
 
 }
 
-.informacion_newsletter{
-    grid-area: 6 / 2 / 6 / 3;
-}
-
+.titulo_parte5{grid-area: 11 / 2 / 11 / 3 ;}
+.informacion_newsletter{grid-area: 12 / 2 / 12 / 3;}
 .form{
-    grid-area: 7 / 2 / 7 / 3;
+    grid-area: 13 / 2 / 13 / 3;
     padding: 5%;
     margin-bottom: 3%;
     border:1px solid black;
@@ -106,40 +125,59 @@ div img, img{
 footer{
     background-color: black;
     color: white;
-    grid-area: 8/ 1 / 8 / 4;
+    grid-area: 14/ 1 / 14 / 4;
     display:flex;
     justify-content: space-around;
 }
 
 @media (min-width: 576px) {
-    .container{grid: 500px repeat(5, auto) / 5% 90% 5%;}
+    .container{grid: 300px repeat(15, auto)/ 5% 90% 5%;}
+    h1{
+        font-size: 325%;
+    }
     .carrousel div{width: 45%;}
 }
 
 @media (min-width: 992px) {
-    .container{grid: 650px repeat(5, auto) / 15% 34% 2% 34% 15%;}
-    .carrousel{grid-area: 5 / 1 / 5/ 6 ;}
-    .carrousel div{width: 30%;}
-
-    footer{grid-area: 8/ 1 / 8 / 6;}
-
-    header{grid-area: 1 / 1 / 1/ 6 ;}
-
-    .primer_parrafo{grid-area: 2 / 2 / 2 / 3 ;}
-
-    .segundo_parrafo{grid-area: 2 / 4 / 2 / 5 ;}
-
-    .instrumentos{grid-area: 4 / 2 / 4 / 5 ;}
-
-    nav a{
-            margin-right: 3%;
-            padding: 1.5%;
+    .container{grid: 650px repeat(13, auto)/ 20% 29% 2% 29% 20%;}
+    h1{
+        font-size: 450%;
     }
-
+    nav a{
+        margin-right: 3%;
+        padding: 1.5%;
+    }
     nav a:active{
         margin-right: 3.5%;
         margin-left: 0.5%;
         padding: 1%;
     }
+    
+    header{grid-area: 1 / 1 / 1/ 6 ;}
+
+    .titulo_parte1{ grid-area: 2 / 2 / 2 / 5 ;}
+    .primer_parrafo{grid-area: 3 / 2 / 3 / 3 ;}
+    .segundo_parrafo{grid-area: 3 / 4 / 3 / 5 ;}
+
+
+    .titulo_parte2{grid-area: 5 / 2 / 5 / 5 ;}
+    .instrumentos{grid-area: 6 / 2 / 6 / 5 ;}
+
+    .titulo_parte3{grid-area: 7 / 2 / 7 / 5 ;}
+    .video_roda{
+        margin-top: 4%;
+        grid-area: 8 / 2 / 8 / 3 ;
+    }
+    .roda{grid-area: 8 / 4 / 8 / 5 ;}
+
+    .carrousel{grid-area: 9 / 1 / 9/ 6 ;}
+    .carrousel div{width: 30%;}
+
+    .titulo_parte5{grid-area: 10 / 2 / 10 / 5 ;}
+    .form{grid-area: 11 / 2 / 11 / 3;}
+    .informacion_newsletter{grid-area: 11 / 4 / 11 / 5;}
+
+    footer{grid-area: 12/ 1 / 12 / 6;}
+
 
 }
