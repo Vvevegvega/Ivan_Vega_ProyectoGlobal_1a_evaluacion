@@ -1,30 +1,66 @@
 .container{
-    align-items: start;
     display:grid;
-    grid: repeat(6, auto) / 5% 90% 5%;
+    grid: 300px repeat(5, auto) / 5% 90% 5%;
 }
 
 header{
-    background-color: blue;
+    background-image: url("../imagenes/voltereta.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;
     grid-area: 1 / 1 / 1/ 4 ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 header nav{
-    margin: 1%;
+    margin-left: 3%;
+    margin-bottom: 2%;
 }
 
+header h1{
+    color: white;
+    margin-left: 3%;
+}
+
+nav a{
+    margin-right: 3%;
+    padding: 2%;
+    color:white;
+    background: none;
+}
+
+nav a:focus, nav a:hover{
+    margin-right: 3%;
+    padding: 2%;
+    color: black;
+    background: white;
+}
+
+nav a:active{
+    margin-right: 4%;
+    margin-left: 1%;
+    padding: 1%;
+    color: black;
+    background: white;
+}
+
+p{
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+
 .primer_parrafo{
-    background-color: blueviolet;
     grid-area: 2 / 2 / 2 / 3 ;
 }
 
 .segundo_parrafo{
-    background-color: brown;
     grid-area: 3 / 2 / 3 / 3 ;
 }
 
 .instrumentos{
-    background-color: blue;
     grid-area: 4 / 2 / 4 / 3 ;
 }
 
@@ -43,20 +79,23 @@ header nav{
 }
 
 div img, img{
+    aspect-ratio: 16 / 9;
     max-width: 100%;
     height: auto;
+    width: 100%; 
+    object-fit: cover;
+
 }
 
 .informacion_newsletter{
     grid-area: 6 / 2 / 6 / 3;
-    background-color: green;
 }
 
 .form{
     grid-area: 7 / 2 / 7 / 3;
-    background-color: yellow;
-    padding: 3%;
+    padding: 5%;
     margin-bottom: 3%;
+    border:1px solid black;
 }
 
 footer{
