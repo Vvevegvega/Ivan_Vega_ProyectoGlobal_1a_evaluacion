@@ -1,14 +1,20 @@
+:root{
+    --oscure_color: #131B28;
+    --medium_color: #e1e0df;
+    --light_color: white;
+}
+
 .container{
     display:grid;
     grid: 300px repeat(15, auto) / 5% 90% 5%;
-    background-color: #e1e0df;
+    background-color: var(--medium_color);
     
 }
 
 body{
     margin:0;
     font-family: "Bebas Neue", serif;
-    color:#131B28;
+    color: var(--oscure_color);
 }
 
 figure{
@@ -40,9 +46,12 @@ header nav{
 }
 
 header h1{
-    color: white;
+    color: var(--light_color);
     margin: 0%;
+    background-color: var(--oscure_color);
     margin-left: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
     width: fit-content;
 }
 
@@ -53,53 +62,57 @@ iframe{
     border: 0;
 }
 
+p{
+    text-align: justify;
+}
+
 nav a{
     margin-right: 1%;
     padding: 2%;
     text-decoration: none;
-    color:white;
+    color:var(--light_color);
+    background-color: var(--oscure_color);
 }
 
 nav a:focus, nav a:hover{
-    color: black;
-    background: #e1e0df;
-    opacity: 0.8;
+    color: var(--oscure_color);
+    background: var(--medium_color);
 }
 
 nav a:active{
     margin-right: 1.2%;
     margin-left: 0.2%;
     padding: 1.8%;
-    color: black;
-    background: #e1e0df;
-}
-
-p{
-    text-justify: inter-word;
-    text-align: justify;
-    opacity: 0.8;
+    color: var(--oscure_color);
+    background: var(--medium_color);
 }
 
 .content_background{ 
-    background-color: white;
+    background-color: var(--light_color);
     grid-area: 2 / 2 / 14 / 3 ;
     margin:-3%;
 }
 
-.titulo_parte1{ grid-area: 2 / 2 / 2 / 3 ;}
+.titulo{
+    background-color: var(--oscure_color);
+    color: var(--light_color);
+    padding: 1%;
+}
+
+#titulo_parte1{ grid-area: 2 / 2 / 2 / 3 ;}
 .primer_parrafo{  grid-area: 3 / 2 / 3 / 3 ;}
 .segundo_parrafo{ grid-area: 4 / 2 / 4 / 3 ;}
 
-.titulo_parte2{grid-area: 5 / 2 / 5 / 3 ;}
+#titulo_parte2{grid-area: 5 / 2 / 5 / 3 ;}
 .instrumentos{grid-area: 6 / 2 / 6 / 3 ;}
 
-.titulo_parte3{grid-area: 7 / 2 / 7 / 3 ;}
+#titulo_parte3{grid-area: 7 / 2 / 7 / 3 ;}
 .video_roda{grid-area: 8 / 2 / 8 / 3 ;}
 .roda{grid-area: 9 / 2 / 9 / 3 ;}
 
 
 .carrousel{
-    background-color: black;
+    background-color: var(--oscure_color);
     grid-area: 10 / 1 / 10/ 4 ;
     display:flex;
     flex-wrap: wrap;
@@ -111,7 +124,7 @@ p{
     width: 90%;
 }
 .carrousel h2{
-    color:white;
+    color:var(--light_color);
     text-align: left;
     width: 90%;
 }
@@ -124,18 +137,18 @@ div img, img{
 
 }
 
-.titulo_parte5{grid-area: 11 / 2 / 11 / 3 ;}
+#titulo_parte5{grid-area: 11 / 2 / 11 / 3 ;}
 .informacion_newsletter{grid-area: 12 / 2 / 12 / 3;}
 .form{
     grid-area: 13 / 2 / 13 / 3;
     padding: 5%;
     margin-bottom: 3%;
-    border:1px solid black;
+    border:1px solid var(--oscure_color);
 }
 
 footer{
-    background-color: black;
-    color: white;
+    background-color: var(--oscure_color);
+    color: var(--light_color);
     grid-area: 14/ 1 / 14 / 4;
     display:flex;
     flex-direction: column;
@@ -161,7 +174,7 @@ footer{
         padding-bottom: 1.2%;
     }
     nav a:active{
-        margin-right: 2%;
+        margin-right: 1.3%;
         margin-left: 0.5%;
         padding: 1.3%;
         padding-top: 1%;
