@@ -168,7 +168,7 @@ footer a{
 }
 
 @media (min-width: 992px) {
-    .container{grid: 650px repeat(13, auto)/ 23% 26% 2% 26% 23%;}
+    .container{grid: 650px repeat(13, auto)/ 25% 24% 2% 24% 25%;}
     h1{
         font-size: 450%;
     }
