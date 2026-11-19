@@ -138,8 +138,7 @@ footer{
     color: white;
     grid-area: 14/ 1 / 14 / 4;
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -169,6 +168,12 @@ footer{
         padding-bottom: 1%;
     }
 
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .content_background{ grid-area: 2 / 2 / 12 / 5 ;}
     
     header{grid-area: 1 / 1 / 1/ 6 ;}
@@ -195,7 +200,12 @@ footer{
     .form{grid-area: 11 / 2 / 11 / 3;}
     .informacion_newsletter{grid-area: 11 / 4 / 11 / 5;}
 
-    footer{grid-area: 12/ 1 / 12 / 6;}
+    footer{
+        grid-area: 12/ 1 / 12 / 6;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
 
 }
