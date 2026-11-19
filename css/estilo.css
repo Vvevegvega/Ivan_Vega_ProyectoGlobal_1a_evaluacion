@@ -157,6 +157,16 @@ footer{
 
 footer a{
     color: var(--light_color);
+    margin: 1%;
+}
+
+footer a img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: auto;
+    object-fit: contain;
+    display: block;
 }
 
 @media (min-width: 576px) {
