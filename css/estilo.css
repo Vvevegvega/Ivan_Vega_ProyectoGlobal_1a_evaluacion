@@ -164,6 +164,11 @@ footer a{
     h1{
         font-size: 325%;
     }
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .carrousel div{width: 45%;}
 }
 
@@ -185,25 +190,19 @@ footer a{
         padding-bottom: 1%;
     }
 
-    footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
     .content_background{ grid-area: 2 / 2 / 12 / 5 ;}
     
     header{grid-area: 1 / 1 / 1/ 6 ;}
 
-    .titulo_parte1{ grid-area: 2 / 2 / 2 / 5 ;}
+    #titulo_parte1{ grid-area: 2 / 2 / 2 / 5 ;}
     .primer_parrafo{grid-area: 3 / 2 / 3 / 3 ;}
     .segundo_parrafo{grid-area: 3 / 4 / 3 / 5 ;}
 
 
-    .titulo_parte2{grid-area: 5 / 2 / 5 / 5 ;}
+    #titulo_parte2{grid-area: 5 / 2 / 5 / 5 ;}
     .instrumentos{grid-area: 6 / 2 / 6 / 5 ;}
 
-    .titulo_parte3{grid-area: 7 / 2 / 7 / 5 ;}
+    #titulo_parte3{grid-area: 7 / 2 / 7 / 5 ;}
     .video_roda{
         margin-top: 4%;
         grid-area: 8 / 2 / 8 / 3 ;
@@ -213,7 +212,7 @@ footer a{
     .carrousel{grid-area: 9 / 1 / 9/ 6 ;}
     .carrousel div{width: 30%;}
 
-    .titulo_parte5{grid-area: 10 / 2 / 10 / 5 ;}
+    #titulo_parte5{grid-area: 10 / 2 / 10 / 5 ;}
     .form{grid-area: 11 / 2 / 11 / 3;}
     .informacion_newsletter{grid-area: 11 / 4 / 11 / 5;}
 
