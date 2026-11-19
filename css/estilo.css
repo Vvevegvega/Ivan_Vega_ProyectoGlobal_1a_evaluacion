@@ -155,6 +155,10 @@ footer{
     align-items: center;
 }
 
+footer a{
+    color: var(--light_color);
+}
+
 @media (min-width: 576px) {
     .container{grid: 500px repeat(15, auto)/ 5% 90% 5%;}
     h1{
